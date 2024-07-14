@@ -1,0 +1,63 @@
+<div class="table_container" >
+    <table class="table table-bordered project_table" style="width: 100%">
+      <tr>
+        <th class="table_head">cat</th>
+        <th class="table_head">Project Number</th>
+        <th class="table_head">Project Name</th>
+        <th class="table_head">Project Manager</th>
+        <th class="table_head">Project Location</th>
+        <th class="table_head">Sector</th>
+        <th class="table_head">Service</th>
+        <th class="table_head">Project Description</th>
+        <th class="table_head">Client</th>
+        <th class="table_head">Project Start</th>
+        <th class="table_head">Project Finish</th>
+        <th class="table_head">Project Picture</th>
+
+        
+      </tr>
+      
+      <?php 
+      
+      ?>
+
+      <?php foreach($data['project'] as $project): ?>
+      <tr class="project_content percobaan"  data-bs-toggle="modal" data-bs-target="#formModal">
+        <td class="type"><?=$project['category'] ?></td>
+        <td><p class="td td-content"><?=$project['project_number'] ?></p></td>
+        <td><p class="td"><?=$project['project_name'] ?></p></td>
+        <td><p class="td"><?=$project['project_manager'] ?></p></td>
+        <td><p class="td"><?=$project['project_location'] ?></p></td>
+        <td>
+            <ul  >
+                <?php $key_words = explode(', ', $project['sektor']); ?>
+                <?php foreach($key_words as $key_word): ?>
+                <li class="table_keywords_list td"><?=$key_word?></li>
+                <?php endforeach ?>
+            </ul>
+        </td>
+
+        <td>
+            <ul >
+                <?php $key_words = explode(', ', $project['service']); ?>
+                <?php foreach($key_words as $key_word): ?>
+                <li class="table_keywords_list td"><?=$key_word?></li>
+                <?php endforeach ?>
+            </ul>
+        </td>
+
+        <td><p class="td"><?php echo nl2br($project['project_description']) ?></p></td>
+
+        <td><p class="td"><?=$project['client'] ?></p></td>
+
+        <td><p class="td"><?=$project['project_start'] ?></p></td>
+
+        <td><p class="td"><?=$project['project_finish'] ?></p></td>
+
+        <td><img src ="image/<?=$project['project_picture'] ?>" width="200px" ></td>
+                
+      </tr>
+      <?php endforeach;?>    
+    </table>
+
+  </div>

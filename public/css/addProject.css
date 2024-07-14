@@ -1,0 +1,81 @@
+
+
+/* ========container input=========== */
+
+
+
+/* .container-input{
+    width: 70%;
+    margin-left: 200px;
+    margin-top: 40px;
+    
+    
+    
+}
+
+
+
+
+.form-input{
+    padding: 10px;
+}
+.form-control{
+    border: 1px solid black;
+} */
+
+
+/* =======checkbox category ========= */
+
+.checkbox_category{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+
+/* ============checkbox sektor=========== */
+
+.checkbox_sektor{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.checkbox_sektor_item{
+    margin-bottom: 10px;
+}
+
+
+
+/* ================checbox service============ */
+
+.checkbox_service{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+
+}
+
+
+
+
+/* ============project finish and start time ============ */
+
+.project_duration{
+    display: flex;
+    gap: 70px;
+    
+}
+
+
+
+.button{
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+
+

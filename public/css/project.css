@@ -1,0 +1,228 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+
+
+/* =========header============ */
+
+
+
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 40px;
+    
+}
+
+.header_title {
+    text-align: center;
+    flex: 1; /* Membuat judul memanfaatkan sisa ruang yang tersedia */
+    margin-left: 400px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.kontainer_legend_chart{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+/* ===========legend====== */
+
+.legend{
+    margin-left: 30px;
+
+}
+.legend-container{
+    display: flex;
+    gap: 20px;
+}
+
+.kotak{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+.oren{
+    background-color: rgb(255, 176, 0);
+}
+.hijau{
+    background-color: rgb(56, 229, 77);
+}
+.cyan{
+    background-color: rgb(64, 248, 255);
+}
+
+/* ===============button and feature=========== */
+
+.feature{
+    display: flex;
+    flex-direction: row;
+    /* width: 100%; */
+    
+}
+
+
+.add-button{
+    align-items: center;
+    display: flex;
+    
+    
+}
+
+
+
+/* ===========search========== */
+
+.collapse{
+    width: 70%;
+}
+
+.search{
+    margin-left: 20px;
+    margin-bottom: 30px;
+    
+}
+.search input{
+    width: 200px;
+    border: 1px solid black;
+}
+
+.search_form{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.search_form_item{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+.add-button a{
+
+    margin-left: 20px;
+}
+
+/* ===========chart diagram=========== */
+
+.wadah{
+    width: 500px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+
+
+/* =========table========== */
+
+
+table, th, td, tr{
+    border: 1px solid black;
+}
+
+.td{
+    color: black;
+    font-weight: 500;
+}
+
+.table_keywords_list{
+    list-style: disc;
+    margin: 5px;
+}
+
+.project_table th{
+    background-color: rgb(48, 133, 195); 
+    color: white;
+    font-weight:800;
+    text-align: center;
+    
+    
+}
+
+.project_table td{
+    vertical-align: middle;
+    font-size: smaller;
+}
+
+
+
+.project_table_print th{
+    background-color: rgb(48, 133, 195); 
+    color: white;
+    font-weight:800;
+    font-size: smaller;
+    text-align: center;
+    /* rgb(122, 234, 178) */
+}
+
+.project_table_print td{
+    vertical-align: middle;
+    font-size: x-small;
+}
+
+
+/* HOVER TABLE FOR SELECTING */
+
+.project_content{
+    transition: 0.4s ease-in-out;
+    
+}
+
+.project_content:hover{ 
+  box-shadow: 5px 5px 8px 2px #888888;
+  background-color: rgba(89, 178, 242, 0.839);
+  height: 120%;
+   cursor: pointer;
+}
+
+
+
+
+
+
+
+.print_section{
+    display: none;
+}
+
+thead{
+    display: table-header-group;
+}
+
+
+@media print{
+
+    .print_section{
+        display: block;
+    }
+
+    .non_print{
+        display: none;
+    }
+
+   
+}        
+
+
+

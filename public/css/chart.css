@@ -1,0 +1,64 @@
+
+.header_title{
+    text-align: center;
+}
+
+
+.back_to_list{
+    margin-top: 20px;
+    margin-left: 50px;
+    display: flex;
+}
+
+.back_to_list a{
+ text-decoration: none;
+ color: rgb(26, 172, 172);
+ transition: 0.5s;
+}
+
+.back_to_list a:hover{
+    
+    color: black;
+   }
+
+/* ======================= */
+
+.filter{
+    margin-left: 600px;
+    margin-bottom: 10px;
+    
+}
+
+.selection_kontainer{
+    display: flex;
+    gap: 20px;
+}
+
+.selections{
+    width: 160px;
+}
+.label{
+    font-weight: bolder;
+}
+
+.submit_button{
+    width: 100px;
+    background-color: rgb(255, 176, 0);
+}
+
+
+
+
+/* ================================= */
+   
+.kontainer_wadah{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.wadah{
+    
+    width: 100%;
+    
+}

@@ -1,0 +1,3 @@
+Options -Indexes 
+
+//artinya blok akses app selama di dalam foldernya tidak ada file index index apapun .php .html dll

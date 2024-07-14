@@ -1,0 +1,13 @@
+Options -Multiviews
+
+RewriteEngine On 
+RewriteCond %{REQUEST_FILENAME} !-d  -> memeriksa apakah url yang ditulis bukan merupakan folder
+RewriteCond %{REQUEST_FILENAME} !-f  -> memeriksa apakah url yang ditulis bukan merupakan file  jika kondisi terpenuhi (bukan file bukan folder) maka RewriteRule akan dijalankan
+RewriteRule ^(.*)$ index.php?url=$1 [L]  -> ini maksdunya buat mengambil semua kata yang dituliskan pada url setelah 'public/' 
+                                            dan memasukannya ke dalam index.php?url=disini_dimasukannya 
+                                            jadi gak perlu repot nulis /public/index.php?url=home
+                                            tapi langsung aja public/home 
+                                            dan btw $1 INI ANGKA SATU BUKAN L KECIL 
+                                            routing nya mulai dari PUBLIC/
+
+
